@@ -6,18 +6,19 @@
     dark
   >
     <v-btn>
-      <span>Home</span>
       <v-icon>mdi-home</v-icon>
     </v-btn>
-
+    <v-btn icon>
+        <v-icon>mdi-magnify</v-icon>
+      </v-btn>
     <v-btn>
-      <span>Favorites</span>
-      <v-icon>mdi-heart</v-icon>
+      <v-icon>mdi-plus-box-outline</v-icon>
     </v-btn>
-
     <v-btn>
-      <span>Nearby</span>
-      <v-icon>mdi-map-marker</v-icon>
+      <v-icon>mdi-bell</v-icon>
+    </v-btn>
+    <v-btn>
+      <v-icon>mdi-account-circle</v-icon>
     </v-btn>
   </v-bottom-navigation>
 </template>

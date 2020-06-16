@@ -11,6 +11,13 @@
           :cols="card.flex"
         >
           <v-card>
+            <v-card-actions> 
+              {{card.title}}
+              <v-spacer></v-spacer>
+              <v-btn icon>
+                <v-icon>mdi-account-plus-outline</v-icon>
+              </v-btn>
+            </v-card-actions>
             <v-img
               :src="card.src"
               class="white--text align-end"
@@ -22,15 +29,22 @@
 
             <v-card-actions> 
               <v-spacer></v-spacer>
-              {{card.title}}
               <v-btn icon>
-                <v-icon>mdi-heart</v-icon>
+                <v-icon>mdi-thumb-up-outline</v-icon>
               </v-btn>
-
+              <v-spacer></v-spacer>
+              <v-btn icon>
+                <v-icon>mdi-thumb-down-outline</v-icon>
+              </v-btn>
+              <v-spacer></v-spacer>
+              <v-btn icon>
+                <v-icon>mdi-chat-plus-outline</v-icon>
+              </v-btn>
+              <v-spacer></v-spacer>
               <v-btn icon>
                 <v-icon>mdi-arrow-down-bold-box-outline</v-icon>
               </v-btn>
-
+              <v-spacer></v-spacer>
               <v-btn icon>
                 <v-icon>mdi-share-variant</v-icon>
               </v-btn>
@@ -46,9 +60,12 @@
   export default {
     data: () => ({
       cards: [
-        { title: 'Pre-fab homes', src: 'https://cdn.vuetifyjs.com/images/cards/house.jpg', flex: 12 },
-        { title: 'Favorite road trips', src: 'https://cdn.vuetifyjs.com/images/cards/road.jpg', flex: 6 },
-        { title: 'Best airlines', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', flex: 6 },
+        { title: 'Pre-fab homes', src: 'https://cdn.vuetifyjs.com/images/cards/house.jpg'},
+        { title: 'Favorite road trips', src: 'https://cdn.vuetifyjs.com/images/cards/road.jpg'},
+        { title: 'Best airlines', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg'},
+        { title: 'Pre-fab homes', src: 'https://cdn.vuetifyjs.com/images/cards/house.jpg'},
+        { title: 'Favorite road trips', src: 'https://cdn.vuetifyjs.com/images/cards/road.jpg'},
+        { title: 'Best airlines', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg'},
       ],
     }),
   }
