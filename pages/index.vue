@@ -29,17 +29,20 @@
 
             <v-card-actions> 
               <v-spacer></v-spacer>
-              <v-btn icon>
+              <v-btn icon @click="likes">
                 <v-icon>mdi-thumb-up-outline</v-icon>
               </v-btn>
+              {{ like }}
               <v-spacer></v-spacer>
-              <v-btn icon>
+              <v-btn icon @click="dislikes">
                 <v-icon>mdi-thumb-down-outline</v-icon>
               </v-btn>
+              {{ dislike }}
               <v-spacer></v-spacer>
-              <v-btn icon>
+              <v-btn icon v-model="comments">
                 <v-icon>mdi-chat-plus-outline</v-icon>
               </v-btn>
+              {{ comments }}
               <v-spacer></v-spacer>
               <v-btn icon>
                 <v-icon>mdi-arrow-down-bold-box-outline</v-icon>
@@ -57,7 +60,11 @@
 </template>
 
 <script>
+import comment from "~/components/comments";
   export default {
+    components: {
+    comment
+  },
     data: () => ({
       cards: [
         { title: 'Pre-fab homes', src: 'https://cdn.vuetifyjs.com/images/cards/house.jpg'},
@@ -67,6 +74,17 @@
         { title: 'Favorite road trips', src: 'https://cdn.vuetifyjs.com/images/cards/road.jpg'},
         { title: 'Best airlines', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg'},
       ],
+      like: 0,
+      dislike: 0,
+      comments: 50
     }),
+    methods: {
+    dislikes: function() {
+      this.dislike++;
+    },
+    likes: function() {
+      this.like++;
+    }
+    }
   }
 </script>

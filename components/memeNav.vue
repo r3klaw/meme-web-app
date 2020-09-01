@@ -17,7 +17,7 @@
     <v-btn>
       <v-icon>mdi-bell</v-icon>
     </v-btn>
-    <v-btn>
+    <v-btn href="/profile">
       <v-icon>mdi-account-circle</v-icon>
     </v-btn>
   </v-bottom-navigation>

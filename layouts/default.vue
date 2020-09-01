@@ -41,15 +41,17 @@
       </v-menu>
     </v-app-bar>
   <nuxt/>
-  <memeCard/>
+  <memeNav/>
   </div>
 </template>
 <script>
-import memeCard from "~/components/memeCards";
+import memeNav from "~/components/memeNav";
+import comment from "~/components/comments";
 
 export default {
   components: {
-    memeCard
+    memeNav,
+    comment
   }
 };
 </script>

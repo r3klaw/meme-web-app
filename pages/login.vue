@@ -69,6 +69,7 @@
 
 <script>
   export default {
+    layout: 'default',
     props: {
       source: String,
     },
