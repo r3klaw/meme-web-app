@@ -5,7 +5,7 @@
     color="dark"
     dark
   >
-    <v-btn>
+    <v-btn href="/">
       <v-icon>mdi-home</v-icon>
     </v-btn>
     <v-btn icon>
